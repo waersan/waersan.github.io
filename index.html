@@ -1,9 +1,154 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  
-  </head>
-  <body>
-      <p> Hello World! </p>
-  </body>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Makan Sederhana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #222;
+        }
+        
+        .tagline {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .product-card {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        
+        .product-name {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #222;
+        }
+        
+        .product-price {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .about p {
+            margin-bottom: 16px;
+            color: #555;
+        }
+        
+        .contact {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #20b760;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Warung Makan Sederhana</h1>
+            <p class="tagline">Makanan Rumahan, Harga Sahabat</p>
+        </header>
+
+        <section class="products-section">
+            <h2>Produk Kami</h2>
+            <div class="products">
+                <div class="product-card">
+                    <div class="product-name">Nasi Goreng Spesial</div>
+                    <div class="product-price">Rp 15.000</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-name">Mie Goreng Jawa</div>
+                    <div class="product-price">Rp 12.000</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-name">Sate Ayam Madura</div>
+                    <div class="product-price">Rp 18.000</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>Tentang Kami</h2>
+            <p>Warung Makan Sederhana hadir sejak 2018 dengan komitmen menyajikan makanan rumahan yang lezat dan bergizi. Kami menggunakan bahan-bahan segar dari pasar lokal setiap pagi.</p>
+            <p>Dengan pengalaman memasak lebih dari 10 tahun, kami selalu berusaha memberikan rasa terbaik untuk pelanggan. Harga terjangkau tanpa mengurangi kualitas adalah prioritas kami.</p>
+        </section>
+
+        <section class="contact">
+            <h2>Hubungi Kami</h2>
+            <p>Untuk pemesanan atau informasi lebih lanjut:</p>
+            <a href="https://wa.me/6281234567890" class="whatsapp-btn">Chat via WhatsApp</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Warung Makan Sederhana</p>
+        </footer>
+    </div>
+</body>
 </html>
